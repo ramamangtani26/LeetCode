@@ -21,7 +21,7 @@ class Solution {
                 return list1;
             }
        while(temp1!=null && temp2!=null){
-         if(temp1.val<temp2.val){
+         if(temp1.val<=temp2.val){
             list3.next=new ListNode(temp1.val);
             temp1=temp1.next;
             list3=list3.next;
