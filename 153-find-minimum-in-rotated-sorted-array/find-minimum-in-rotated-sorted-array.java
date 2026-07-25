@@ -6,13 +6,13 @@ class Solution {
         while(left<=right){
             int mid=left+(right-left)/2;
             if(nums[mid]>=nums[left]){
-                if(nums[left]<min){
+                if(min>nums[left]){
                     min=nums[left];
                 }
                 left=mid+1;
             }
             else{
-                if(nums[mid]<min){
+                if(nums[mid]<=min){
                     min=nums[mid];
                 }
                 right=mid-1;
