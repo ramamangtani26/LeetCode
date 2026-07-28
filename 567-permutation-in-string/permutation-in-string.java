@@ -18,7 +18,7 @@ class Solution {
                 return true;
             }
             else{
-                freq2[s2.charAt((k-s1.length()))-'a']--;
+                freq2[s2.charAt(k-s1.length())-'a']--;
                 freq2[s2.charAt(k)-'a']++;
             }
         }
