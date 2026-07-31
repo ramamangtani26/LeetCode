@@ -8,9 +8,8 @@ class Solution {
             char ch2=sb.charAt(right);
             if(Character.isLetter(ch1)){
                 if(Character.isLetter(ch2)){
-                    char temp=ch1;
                     sb.setCharAt(left, ch2);
-                    sb.setCharAt(right, temp);
+                    sb.setCharAt(right,ch1);
                     left++;
                     right--;
                 }
