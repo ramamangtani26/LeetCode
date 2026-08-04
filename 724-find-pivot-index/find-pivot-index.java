@@ -6,12 +6,12 @@ class Solution {
         for(int i=0;i<nums.length;i++){
             ts+=nums[i];
         }
-        for(int j=0;j<nums.length;j++){
-            rs=ts-nums[j]-ls;
+        for(int i=0;i<nums.length;i++){
+            rs=ts-ls-nums[i];
             if(ls==rs){
-                return j;
+                return i;
             }
-            ls=ls+nums[j];
+            ls+=nums[i];
         }
         return -1;
     }
