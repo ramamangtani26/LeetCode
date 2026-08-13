@@ -5,13 +5,18 @@ class Solution {
         int length=0;
         for(int i=0;i<s.length();i++){
             char ch=s.charAt(i);
-            while(set.contains(ch)){
-                set.remove(s.charAt(left));
-                left++;
+            if(!set.contains(ch)){
+                set.add(ch);
             }
-            set.add(s.charAt(i));
+            else{
+                while(set.contains(ch)){
+                    set.remove(s.charAt(left));
+                    left++;
+                }
+                set.add(ch);
+            }
             length=Math.max(length,set.size());
         }
-    return length;
+        return length;
     }
 }
