@@ -18,8 +18,8 @@ class Solution {
             fast=fast.next;
         }
         while(fast!=null){
-            slow=slow.next;
             fast=fast.next;
+            slow=slow.next;
         }
         slow.next=slow.next.next;
         return dummy.next;
