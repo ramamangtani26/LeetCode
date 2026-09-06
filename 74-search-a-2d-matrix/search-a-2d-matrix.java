@@ -6,9 +6,8 @@ class Solution {
         int right=row*col-1;
         while(left<=right){
             int mid=left+(right-left)/2;
-                int rows=mid/col;
-                int cols=mid%col;
-            
+            int rows=mid/col;
+            int cols=mid%col;
             if(matrix[rows][cols]==target){
                 return true;
             }
