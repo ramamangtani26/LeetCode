@@ -3,7 +3,7 @@ class Solution {
         int maxA=0;
         int left=0;
         int right=height.length-1;
-        while(left<=right){
+        while(left<right){
                 int h=Math.min(height[left],height[right]);
                 int width=right-left;
                 int area=h*width;
