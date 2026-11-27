@@ -11,11 +11,11 @@ class Solution {
         for(int i=0;i<matrix.length;i++){
             for(int j=0;j<matrix[0].length;j++){
                 if(matrix[i][j]==0){
-                    for(int k=0;k<cols;k++){
-                        copy[i][k]=0;
-                    }
                     for(int k=0;k<rows;k++){
                         copy[k][j]=0;
+                    }
+                    for(int k=0;k<cols;k++){
+                        copy[i][k]=0;
                     }
                 }
             }
